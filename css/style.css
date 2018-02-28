@@ -1,0 +1,119 @@
+body {
+	font-family: Calibri, Candara, Arial, sans-serif;
+	color: #000;
+  --scs-red: #9C1C29;
+}
+
+
+.body-container {
+	max-width: 1024px;
+	margin: 0 auto;
+	display: flex;
+  flex-flow: column wrap;
+
+}
+
+
+
+/*-----------------------------------------------------------*/
+/*------------------------- Header --------------------------*/
+/*-----------------------------------------------------------*/
+
+header {
+	height: 180px;
+	display: flex;
+	justify-content: space-between;
+	background-repeat: no-repeat;
+}
+
+/*-----------------------------------------------------------*/
+/*---------------------- Main Content -----------------------*/
+/*-----------------------------------------------------------*/
+
+.main-content {
+  height: 600px;
+	background-image: url("imgs/puppies.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*-----------------------------------------------------------*/
+/*--------------------- Main Card ---------------------------*/
+/*-----------------------------------------------------------*/
+
+.card {
+  width: 620px;
+	height: 420px;
+  margin-bottom: 80px;
+  border-radius: 0px;
+  border: none;
+}
+
+.card-header {
+  height: 45px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--scs-red);
+  border-radius: 0px;
+  color: #f9f9f9;
+}
+
+.card-header:first-child {
+  border-radius: 0px;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-subtitle {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.card-subtitle h2 {
+  color: var(--scs-red);
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+.card-trademark {
+  font-size: 14px;
+  color: var(--scs-red);
+}
+
+/*-----------------------------------------------------------*/
+/*------------------------ Buttons --------------------------*/
+/*-----------------------------------------------------------*/
+
+.btn {
+  border-radius: 0px;
+  background-color: var(--scs-red);
+  color: #f9f9f9;
+}
+
+.btn-card {
+  width: 256px;
+  height: 45px;
+  margin-bottom: 10px;
+}
+
+
+/*-----------------------------------------------------------*/
+/*------------------------- Footer --------------------------*/
+/*-----------------------------------------------------------*/
+
+footer {
+  height: 180px;
+}
