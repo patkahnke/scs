@@ -1,7 +1,7 @@
 body {
-	font-family: Calibri, Candara, Arial, sans-serif;
+	font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
 	color: #000;
-  --scs-red: #9C1C29;
+  --scs-red: #9C1B26;
 }
 
 
@@ -10,10 +10,19 @@ body {
 	margin: 0 auto;
 	display: flex;
   flex-flow: column wrap;
-
 }
 
+h1, h2 {
+	font-size: 30px;
+	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+	color: var(--scs-red);
+}
 
+h3 {
+	font-size: 25px;
+	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+	color: var(--scs-red);
+}
 
 /*-----------------------------------------------------------*/
 /*------------------------- Header --------------------------*/
@@ -22,8 +31,76 @@ body {
 header {
 	height: 180px;
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 	background-repeat: no-repeat;
+	color: var(--scs-red);
+}
+
+.header-top-row {
+	padding: 36px 80px 20px 80px;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.header-bottom-row {
+	padding: 0px 80px 0px 60px;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.header-bottom-left {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 36px;
+}
+
+.header-bottom-right {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.logo-text {
+	width: 190px;
+}
+
+.logo-icons {
+	width: 165px;
+}
+
+.icon-training {
+	width: 110px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.btn-white {
+  border-radius: 0px;
+	border: 1px solid var(--scs-red);
+	color: var(--scs-red);
+}
+
+.btn-browse {
+	width: 190px;
+	height: 45px;
+}
+
+.btn-login {
+	width: 180px;
+	height: 45px;
+}
+
+.welcome {
+	padding: 0px 30px 12px 0px;
 }
 
 /*-----------------------------------------------------------*/
@@ -82,9 +159,7 @@ header {
   justify-content: space-around;
   align-items: flex-start;
 }
-.card-subtitle h2 {
-  color: var(--scs-red);
-  font-size: 25px;
+.card-subtitle h3 {
   padding-bottom: 20px;
 }
 
@@ -97,7 +172,7 @@ header {
 /*------------------------ Buttons --------------------------*/
 /*-----------------------------------------------------------*/
 
-.btn {
+.btn-red {
   border-radius: 0px;
   background-color: var(--scs-red);
   color: #f9f9f9;
