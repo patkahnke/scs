@@ -9,33 +9,47 @@
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script src="clientApp.js"></script>
   </head>
   <body>
     <div class="container body-container">
       <header>
-        <div class="header-top-row">
-          <div class="logo-text">
-            <img alt="St. Croix Sensory Logo text" src="css/imgs/logo-text.png">
-          </div>
-            <button type="button" class="btn btn-white btn-browse">Browse Courses</button>
-          <div class="logo-icons">
-            <img alt="St. Croix Sensory Logo icons" src="css/imgs/logo-icons.png">
-          </div>
-        </div>
-        <div class="header-bottom-row">
-          <div class="header-bottom-left">
-            <div class="icon-training">
-              <img alt="Training Icon" src="css/imgs/Icon_Overall_Training.png">
+        <div class="container header-container">
+          <div class="header-top-row">
+            <div class="logo-text">
+              <img alt="St. Croix Sensory Logo text" src="css/imgs/logo-text.png">
             </div>
-            <h2>Training</h2>
+              <button type="button" class="btn btn-white btn-browse">Browse Courses</button>
+            <div class="logo-icons">
+              <img alt="St. Croix Sensory Logo icons" src="css/imgs/logo-icons.png">
+            </div>
           </div>
-          <div class="header-bottom-right">
-            <span class="welcome">Welcome, GUEST</span>
-            <button type="button" class="btn btn-red btn-login">LOGIN</button>
+          <div class="header-bottom-row">
+            <div class="header-bottom-left">
+              <div class="icon-training">
+                <img alt="Training Icon" src="css/imgs/Icon_Overall_Training.png">
+              </div>
+              <h2>Training</h2>
+            </div>
+            <div class="header-bottom-right">
+              <span class="welcome">Welcome, GUEST</span>
+              <div class="dropdown">
+                <button type="button" class="btn btn-red btn-login">LOGIN</button>
+              </div>
+            </div>
           </div>
         </div>
       </header>
       <div class="container main-content" role="main">
+        <div  class="login-form">
+          <form>
+            <div class="login-wrapper">
+              <input type="username" class="form-control input-login" aria-describedby="username" placeholder="Returning User Name">
+              <input type="password" class="form-control input-login"  aria-describedby="password" placeholder="Password">
+              <button type="button" class="btn btn-red btn-login-dropdown">LOGIN</button>
+            </div>
+          </form>
+        </div>
         <div class="card">
           <div class="card-header">
               Welcome to St. Croix Sensory, Inc. Training

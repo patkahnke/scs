@@ -2,8 +2,8 @@ body {
 	font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
 	color: #000;
   --scs-red: #9C1B26;
+	--scs-grey: #F1F1F2;
 }
-
 
 .body-container {
 	max-width: 1024px;
@@ -28,7 +28,8 @@ h3 {
 /*------------------------- Header --------------------------*/
 /*-----------------------------------------------------------*/
 
-header {
+.header-container {
+	width: 100%;
 	height: 180px;
 	display: flex;
 	flex-direction: column;
@@ -38,14 +39,14 @@ header {
 }
 
 .header-top-row {
-	padding: 36px 80px 20px 80px;
+	padding-top: 36px;
+	padding-bottom: 20px;
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
 }
 
 .header-bottom-row {
-	padding: 0px 80px 0px 60px;
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
@@ -83,22 +84,6 @@ img {
   height: auto;
 }
 
-.btn-white {
-  border-radius: 0px;
-	border: 1px solid var(--scs-red);
-	color: var(--scs-red);
-}
-
-.btn-browse {
-	width: 190px;
-	height: 45px;
-}
-
-.btn-login {
-	width: 180px;
-	height: 45px;
-}
-
 .welcome {
 	padding: 0px 30px 12px 0px;
 }
@@ -113,8 +98,40 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  justify-content: space-around;
+	flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+}
+
+.login-form {
+	display: none;
+}
+
+.login-form-show {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.login-wrapper {
+	width: 620px;
+	height: 120px;
+	color: var(--scs-red);
+	background-color: var(--scs-grey);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.input-login {
+	width: 205px;
+	height: 45px;
+	border-radius: none;
+	border: 2px solid var(--scs-red);
+}
+
+input::placeholder {
+	color: var(--scs-red) !important;
 }
 
 /*-----------------------------------------------------------*/
@@ -124,9 +141,9 @@ img {
 .card {
   width: 620px;
 	height: 420px;
-  margin-bottom: 80px;
   border-radius: 0px;
   border: none;
+	margin-top: 45px;
 }
 
 .card-header {
@@ -137,6 +154,7 @@ img {
   background-color: var(--scs-red);
   border-radius: 0px;
   color: #f9f9f9;
+	font-size: 14px;
 }
 
 .card-header:first-child {
@@ -172,6 +190,23 @@ img {
 /*------------------------ Buttons --------------------------*/
 /*-----------------------------------------------------------*/
 
+.btn-browse {
+	width: 190px;
+	height: 45px;
+}
+
+.btn-login {
+	width: 180px;
+	height: 45px;
+	font-size: 14px;
+}
+
+.btn-login-dropdown {
+	width: 96px;
+	height: 45px;
+	font-size: 14px;
+}
+
 .btn-red {
   border-radius: 0px;
   background-color: var(--scs-red);
@@ -182,15 +217,31 @@ img {
   width: 256px;
   height: 45px;
   margin-bottom: 10px;
+	text-align: left;
+	font-size: 14px;
+}
+
+.btn-red {
+  border-radius: 0px;
+  background-color: var(--scs-red);
+  color: #f9f9f9;
+}
+
+.btn-white {
+  border-radius: 0px;
+	border: 1px solid var(--scs-red);
+	color: var(--scs-red);
+}
+
+.dropdown-toggle {
+	background-color: var(--scs-grey);
+	color: var(--scs-red);
 }
 
 
-/*-----------------------------------------------------------*/
-/*------------------------- Footer --------------------------*/
-/*-----------------------------------------------------------*/
-
 footer {
   height: 180px;
+	background-color: var(--scs-grey);
 }
 
 .footer-container {
@@ -209,4 +260,13 @@ footer {
 .logo-icons-footer {
 	width: 200px;
 	padding-bottom: 8px;
+}
+
+
+/*-----------------------------------------------------------*/
+/*------------------- Bootstrap Overrides -------------------*/
+/*-----------------------------------------------------------*/
+
+.form-control {
+	border-radius: 0px;
 }
