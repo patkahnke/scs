@@ -1,15 +1,18 @@
+:root {
+  	--scs-red: #9C1B26;
+	--scs-grey: #F1F1F2;
+};
+
 body {
 	font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
 	color: #000;
-  --scs-red: #9C1B26;
-	--scs-grey: #F1F1F2;
 }
 
 .body-container {
 	max-width: 1024px;
 	margin: 0 auto;
 	display: flex;
-  flex-flow: column wrap;
+  	flex-flow: column wrap;
 }
 
 h1, h2 {
@@ -88,25 +91,25 @@ h3 {
 /*-----------------------------------------------------------*/
 
 .main-content-main-page {
-  height: 600px;
+  	height: 600px;
 	background-image: url("imgs/NasalRanger.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	display: flex;
 	flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  	justify-content: flex-start;
+  	align-items: center;
 }
 
 .main-content-course-detail {
-  height: 760px;
+  	height: 760px;
 	background-image: url("imgs/NasalRanger.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	display: flex;
 	flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  	justify-content: flex-start;
+  	align-items: center;
 }
 
 #login-form {
@@ -145,26 +148,26 @@ input::placeholder {
 /*-----------------------------------------------------------*/
 
 .card-main-page {
-  width: 620px;
+  	width: 620px;
 	height: 440px;
-  border-radius: 0px;
-  border: none;
+  	border-radius: 0px;
+  	border: none;
 	margin-top: 30px;
 }
 
 .card-course-detail {
-  width: 620px;
+  	width: 620px;
 	height: 700px;
-  border-radius: 0px;
-  border: none;
+  	border-radius: 0px;
+  	border: none;
 	margin-top: 30px;
 }
 
 .card-course-description {
-  width: 360px;
+  	width: 360px;
 	height: 200px;
-  border-radius: 0px;
-  border: none;
+  	border-radius: 0px;
+  	border: none;
 	margin-top: 30px;
 	border: 1px solid var(--scs-red);
 }
@@ -179,26 +182,26 @@ input::placeholder {
 
 .card-course-contents {
 	justify-content: flex-start;
-  width: 360px;
+  	width: 360px;
 	height: 275px;
-  border-radius: 0px;
-  border: none;
+  	border-radius: 0px;
+  	border: none;
 	margin-top: 30px;
 	border: 1px solid var(--scs-red);
 }
 
 .card-header {
-  height: 45px;
-  width: 100%;
-  display: flex;
-  background-color: var(--scs-red);
-  border-radius: 0px;
-  color: #f9f9f9;
+  	height: 45px;
+  	width: 100%;
+  	display: flex;
+  	background-color: var(--scs-red);
+  	border-radius: 0px;
+  	color: #f9f9f9;
 	font-size: 14px;
 }
 
 .card-header-large {
-	  justify-content: space-around;
+	justify-content: space-around;
 }
 
 .card-header-small {
@@ -206,32 +209,32 @@ input::placeholder {
 }
 
 .card-header:first-child {
-  border-radius: 0px;
+  	border-radius: 0px;
 }
 
 .card-body-main-page {
-  display: flex;
-  justify-content: space-around;
+  	display: flex;
+  	justify-content: space-around;
 }
 
 .card-body-course-detail {
-  display: flex;
+  	display: flex;
 	flex-direction: column;
-  justify-content: space-around;
+  	justify-content: space-around;
 	font-size: 12px;
 }
 
 .card-body-course-contents {
 	width: 100%;
-  display: flex;
+  	display: flex;
 	align-items: flex-start;
 	padding-left: 0;
 }
 
 .card-column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
 }
 
 .card-column-right {
@@ -250,24 +253,24 @@ input::placeholder {
 }
 
 .card-subtitle {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
 }
 
 .card-subtitle-course-detail {
 	width: 100%;
-  display: flex;
-  justify-content: flex-start;
+	display: flex;
+	justify-content: flex-start;
 }
 
 .card-subtitle h3 {
-  padding-bottom: 20px;
+  	padding-bottom: 20px;
 }
 
 .card-trademark {
-  font-size: 14px;
-  color: var(--scs-red);
+	font-size: 14px;
+	color: var(--scs-red);
 }
 
 .button-group {
@@ -346,21 +349,21 @@ input::placeholder {
 }
 
 .btn-card {
-  width: 256px;
-  height: 45px;
-  margin-top: 10px;
+  	width: 256px;
+  	height: 45px;
+  	margin-top: 10px;
 	text-align: left;
 	font-size: 14px;
 }
 
 .btn-red {
-  border-radius: 0px;
-  background-color: var(--scs-red);
-  color: #f9f9f9;
+  	border-radius: 0px;
+  	background-color: var(--scs-red);
+  	color: #f9f9f9;
 }
 
 .btn-white {
-  border-radius: 0px;
+  	border-radius: 0px;
 	border: 1px solid var(--scs-red);
 	color: var(--scs-red);
 }
@@ -375,7 +378,7 @@ input::placeholder {
 /*-----------------------------------------------------------*/
 
 footer {
-  height: 180px;
+  	height: 180px;
 	background-color: var(--scs-grey);
 }
 
@@ -406,8 +409,7 @@ footer {
 	border-radius: 0px;
 }
 
-
 img {
-  width: 100%;
-  height: auto;
+  	width: 100%;
+  	height: auto;
 }
