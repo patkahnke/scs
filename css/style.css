@@ -30,7 +30,7 @@ h3 {
 h4 {
 	font-size: 18px;
 	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
-	color: var(--scs-red);
+	color: #9C1B26;
 }
 
 /*-----------------------------------------------------------*/
@@ -164,7 +164,7 @@ h4 {
 	width: 360px;
 	height: 45px;
 	border-radius: none;
-	border: 1px solid var(--scs-red);
+	border: 1px solid #9C1B26;
 	margin-bottom: 15px;
 }
 
@@ -172,11 +172,11 @@ h4 {
 	width: 360px;
 	height: 120px;
 	border-radius: none;
-	border: 1px solid var(--scs-red);
+	border: 1px solid #9C1B26;
 }
 
 textarea::placeholder {
-	color: var(--scs-red) !important;
+	color: #9C1B26 !important;
 }
 
 input::placeholder {
