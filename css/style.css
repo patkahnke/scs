@@ -18,13 +18,13 @@ body {
 h1, h2 {
 	font-size: 30px;
 	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
-	color: var(--scs-red);
+	color: #9C1B26;
 }
 
 h3 {
 	font-size: 25px;
 	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
-	color: var(--scs-red);
+	color: #9C1B26;
 }
 
 h4 {
@@ -39,17 +39,16 @@ h4 {
 
 .header-container {
 	width: 100%;
-	height: 180px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	background-repeat: no-repeat;
-	color: var(--scs-red);
+	color: #9C1B26;
 }
 
 .header-top-row {
 	padding-top: 36px;
-	padding-bottom: 20px;
+	padding-bottom: 8px;
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
@@ -147,8 +146,8 @@ h4 {
 .login-wrapper {
 	width: 620px;
 	height: 120px;
-	color: var(--scs-red);
-	background-color: var(--scs-grey);
+	color: #9C1B26;
+	background-color: #F1F1F2;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -158,7 +157,7 @@ h4 {
 	width: 205px;
 	height: 45px;
 	border-radius: none;
-	border: 2px solid var(--scs-red);
+	border: 2px solid #9C1B26;
 }
 
 .input-registration {
@@ -181,7 +180,7 @@ textarea::placeholder {
 }
 
 input::placeholder {
-	color: var(--scs-red) !important;
+	color: #9C1B26 !important;
 }
 
 /*-----------------------------------------------------------*/
@@ -210,13 +209,13 @@ input::placeholder {
   	border-radius: 0px;
   	border: none;
 	margin-top: 30px;
-	border: 1px solid var(--scs-red);
+	border: 1px solid #9C1B26;
 }
 
 .expandable-button-collapse {
 	height: 225px;
 	width: 190px;
-	border: 1px solid var(--scs-red);
+	border: 1px solid #9C1B26;
 	border-top: 0;
 	display: flex;
 	flex-direction: column;
@@ -225,7 +224,7 @@ input::placeholder {
 
 .course-detail-text {
 	margin: 10px;
-	color: var(--scs-red);
+	color: #9C1B26;
 	font-size: 14px;
 }
 
@@ -236,14 +235,14 @@ input::placeholder {
   	border-radius: 0px;
   	border: none;
 	margin-top: 30px;
-	border: 1px solid var(--scs-red);
+	border: 1px solid #9C1B26;
 }
 
 .card-header {
   	height: 45px;
   	width: 100%;
   	display: flex;
-  	background-color: var(--scs-red);
+  	background-color: #9C1B26;
   	border-radius: 0px;
   	color: #f9f9f9;
 	font-size: 14px;
@@ -326,7 +325,7 @@ input::placeholder {
 
 .card-trademark {
 	font-size: 14px;
-	color: var(--scs-red);
+	color: #9C1B26;
 }
 
 .button-group {
@@ -393,7 +392,7 @@ input::placeholder {
 .btn-icon-wrapper {
 	height: 44px;
 	width: 44px;
-	background-color: var(--scs-red);
+	background-color: #9C1B26;
 }
 
 .btn-login-dropdown {
@@ -425,19 +424,19 @@ input::placeholder {
 
 .btn-red {
   	border-radius: 0px;
-  	background-color: var(--scs-red);
+  	background-color: #9C1B26;
   	color: #f9f9f9;
 }
 
 .btn-white {
   	border-radius: 0px;
-	border: 1px solid var(--scs-red);
-	color: var(--scs-red);
+	border: 1px solid #9C1B26;
+	color: #9C1B26;
 }
 
 .dropdown-toggle {
-	background-color: var(--scs-grey);
-	color: var(--scs-red);
+	background-color: #F1F1F2;
+	color: #9C1B26;
 }
 
 .btn-course-detail {
@@ -455,7 +454,7 @@ input::placeholder {
 
 footer {
   	height: 180px;
-	background-color: var(--scs-grey);
+	background-color: #F1F1F2;
 }
 
 .footer-container {
