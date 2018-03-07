@@ -1,7 +1,7 @@
 :root {
   	--scs-red: #9C1B26;
 	--scs-grey: #F1F1F2;
-};
+}
 
 body {
 	font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
@@ -302,6 +302,10 @@ input::placeholder {
 /*-----------------------------------------------------------*/
 /*------------------------ Buttons --------------------------*/
 /*-----------------------------------------------------------*/
+
+.clickable:hover {
+	cursor: pointer;
+}
 
 .btn-browse {
 	width: 190px;
