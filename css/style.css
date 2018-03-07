@@ -169,6 +169,14 @@ input::placeholder {
 	border: 1px solid var(--scs-red);
 }
 
+.expandable-button-collapse {
+	height: 225px;
+	width: 190px;
+	border: 1px solid var(--scs-red);
+	border-top: 0;
+	color: var(--scs-red);
+}
+
 .card-course-contents {
 	justify-content: flex-start;
   width: 360px;
@@ -231,7 +239,6 @@ input::placeholder {
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
-	/* width: 240px; */
 	padding-top: 30px;
 }
 
@@ -309,7 +316,11 @@ input::placeholder {
 	height: 45px;
 	padding: 0;
 	display: flex;
-	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+.btn-course-top {
+	margin-top: 0;
 }
 
 .btn-course-text {
@@ -317,8 +328,8 @@ input::placeholder {
 }
 
 .btn-icon-wrapper {
-	height: 45px;
-	width: 45px;
+	height: 44px;
+	width: 44px;
 	background-color: var(--scs-red);
 }
 
@@ -358,6 +369,10 @@ input::placeholder {
 	background-color: var(--scs-grey);
 	color: var(--scs-red);
 }
+
+/*-----------------------------------------------------------*/
+/*-------------------------- Footer -------------------------*/
+/*-----------------------------------------------------------*/
 
 footer {
   height: 180px;
