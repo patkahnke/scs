@@ -119,9 +119,8 @@ h4 {
 	background-image: url("../imgs/NasalRanger.jpg");
 }
 
-.main-content-course-detail {
-  height: 760px;
-  background-repeat: no-repeat;
+.card-container {
+	background-repeat: no-repeat;
   background-size: cover;
   display: flex;
 	flex-direction: column;
@@ -129,14 +128,12 @@ h4 {
   align-items: center;
 }
 
-.main-content-online-registration {
+.course-detail {
+  height: 760px;
+}
+
+.tall {
   height: 800px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-	flex-direction: column;
-  	justify-content: flex-start;
-  	align-items: center;
 }
 
 #login-form {
@@ -193,6 +190,26 @@ input::placeholder {
 /*--------------------- Main Card ---------------------------*/
 /*-----------------------------------------------------------*/
 
+.card-row {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 20px;
+}
+
+.left-card {
+	margin-right: 28px;
+}
+
+.right-card {
+	margin-left: 28px;
+}
+
+.card-row>div {
+	width: 50%;
+	display: flex;
+	justify-content: flex-start;
+}
+
 .card-main-page {
   	width: 620px;
 	height: 440px;
@@ -206,7 +223,10 @@ input::placeholder {
 	height: 700px;
   	border-radius: 0px;
   	border: none;
-	margin-top: 30px;
+}
+
+.card-payment {
+	width: 620px;
 }
 
 .card-course-description {
@@ -260,6 +280,11 @@ input::placeholder {
 
 .card-header-small {
 	justify-content: flex-start;
+}
+
+.border-red {
+	border: 1px solid #9C1B26;
+	border-radius: 0px;
 }
 
 .card-header:first-child {
@@ -360,6 +385,16 @@ input::placeholder {
 	width: 110px;
 	margin-right: 30px;
 }
+
+#cost {
+	color: #9C1B26;
+	font-weight: bold;
+}
+
+#cost::before {
+	content: "$";
+}
+
 /*-----------------------------------------------------------*/
 /*------------------------ Buttons --------------------------*/
 /*-----------------------------------------------------------*/
@@ -496,4 +531,8 @@ img {
 
 .form-control:focus {
 	box-shadow: none;
+}
+
+.card {
+	margin-top: 30px;
 }
