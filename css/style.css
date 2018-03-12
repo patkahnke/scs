@@ -175,6 +175,25 @@ input::placeholder {
 	color: #9C1B26 !important;
 }
 
+.input-row-half {
+	
+	display: flex;
+}
+
+.input-row-half>input {
+	padding-right: 0;
+	width: 174px;
+}
+
+.row {
+	margin: 0;
+	justify-content: space-between;
+}
+
+/*.tab-content {
+	display: flex;
+}*/
+
 /*-----------------------------------------------------------*/
 /*--------------------- Main Card ---------------------------*/
 /*-----------------------------------------------------------*/
@@ -183,6 +202,7 @@ input::placeholder {
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 20px;
+	justify-content: space-between;
 }
 
 .left-card {
@@ -271,9 +291,11 @@ input::placeholder {
 	justify-content: flex-start;
 }
 
-.border-red {
+.card-nested {
+	display: flex;
 	border: 1px solid #9C1B26;
 	border-radius: 0px;
+	justify-content: center;
 }
 
 .card-header:first-child {

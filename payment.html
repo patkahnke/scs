@@ -52,7 +52,7 @@
             </div>
 
               <div class="card-row">
-                <div class="card border-red left-card">
+                <div class="card card-nested left-card">
                   <div class="card-header card-header-small">
                     Course Registration
                   </div>
@@ -60,31 +60,70 @@
                     Nasal Ranger Inspector - Online
                   </div>
                 </div>
-                <div class="card border-red right-card">
+                <div class="card card-nested right-card">
                   <div class="card-header card-header-small">
                     Cost
                   </div>
                   <div class="card-body">
-                    <p id="cost">99.00</p>
+                    <span id="cost">99.00</span>
                   </div>
                 </div>
               </div>
+              <h4>Payment options:</h4>
+                <ul class="nav nav-tabs" id="payment-options" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="visa-mc-tab" data-toggle="tab" href="#visa-mc" role="tab" aria-controls="visa-mc" aria-selected="true">Visa / MC</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="paypal-tab" data-toggle="tab" href="#paypal" role="tab" aria-controls="paypal" aria-selected="false">PayPal</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="access-code-tab" data-toggle="tab" href="#access-code" role="tab" aria-controls="access-code" aria-selected="false">Access Code</a>
+                  </li>
+                </ul>
 
-              <form>
-                <div class="card-columns-wrapper">
-                  <div class="card-column-left">
-                    <input class="form-control input-registration" aria-describedby="regarding" placeholder="RE: Nasal Ranger Inspector - Webinar">
-                    <input class="form-control input-registration" aria-describedby="name" placeholder="Name">
-                    <input class="form-control input-registration" aria-describedby="company" placeholder="Company">
-                    <input class="form-control input-registration" aria-describedby="email" placeholder="Email Address">
-                    <input class="form-control input-registration" aria-describedby="phone" placeholder="Phone">
-                    <textarea class="form-control input-message" aria-describedby="message" placeholder="Please contact me with information about this webinar."></textarea>
+                <!-- Tab panes -->
+                <div class="tab-content">
+
+                  <div class="tab-pane active" id="visa-mc" role="tabpanel" aria-labelledby="visa-mc-tab">
+                    <form>
+                      <div class="card-columns-wrapper">
+                        <div class="card-column-left">
+                          <div class="row">
+                          <div class="input-row-half">
+                          
+                            <input class="form-control input-registration" aria-describedby="First Name" placeholder="First Name">
+                          </div>
+                          <div class="input-row-half">
+                            <input class="form-control input-registration" aria-describedby="Last Name" placeholder="Last Name">
+                          </div>
+                        </div>
+                            <input class="form-control input-registration" aria-describedby="Card Number" placeholder="Card Number">
+                            <input class="form-control input-registration" aria-describedby="Expiration Date" placeholder="Expiration Date">
+                            <input class="form-control input-registration" aria-describedby="CVV" placeholder="CVV">
+                            <input class="form-control input-registration" aria-describedby="Address" placeholder="Address">
+                            <input class="form-control input-registration" aria-describedby="City" placeholder="City">
+                            <input class="form-control input-registration" aria-describedby="State" placeholder="State">
+                            <input class="form-control input-registration" aria-describedby="Zip" placeholder="Zip">
+                        </div>
+                        <div class="card-column-right-bottom">
+                          <button type="submit" class="btn btn-red btn-registration">Submit</button>
+                        </div>
+                      </div>
+                    </form>
                   </div>
-                  <div class="card-column-right-bottom">
-                    <button type="submit" class="btn btn-red btn-registration">Submit</button>
+
+                  <div class="tab-pane" id="paypal" role="tabpanel" aria-labelledby="paypal-tab">
+                    2
+                  </div>
+                  <div class="tab-pane" id="access-code" role="tabpanel" aria-labelledby="access-code-tab">
+                    3
                   </div>
                 </div>
-              </form>
+
+
+
+              
             </div>
           </div>
         </div>
