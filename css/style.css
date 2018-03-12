@@ -167,32 +167,33 @@ h4 {
 	border: 1px solid #9C1B26;
 }
 
-textarea::placeholder {
+textarea::placeholder, input::placeholder {
 	color: #9C1B26 !important;
 }
 
-input::placeholder {
-	color: #9C1B26 !important;
-}
-
-.input-row-half {
-	
-	display: flex;
-}
-
-.input-row-half>input {
+.input-half {
 	padding-right: 0;
 	width: 174px;
 }
 
-.row {
-	margin: 0;
-	justify-content: space-between;
+.input-fourth {
+	padding-right: 0;
+	width: 81px;
 }
 
-/*.tab-content {
-	display: flex;
-}*/
+select.form-control {
+   color: #9C1B26;
+   height: 45px !important;
+   padding-left: 10px;
+}
+
+option {
+	color: #9C1B26;
+}
+
+.bottom-field-row .input-registration {
+	margin-bottom: 0;
+}
 
 /*-----------------------------------------------------------*/
 /*--------------------- Main Card ---------------------------*/
@@ -533,6 +534,7 @@ footer {
 
 .form-control {
 	border-radius: 0px;
+	color: #9C1B26;
 }
 
 img {
@@ -542,8 +544,14 @@ img {
 
 .form-control:focus {
 	box-shadow: none;
+	color: #9C1B26;
 }
 
 .card {
 	margin-top: 30px;
+}
+
+.row {
+	margin: 0;
+	justify-content: space-between;
 }

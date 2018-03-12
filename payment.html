@@ -90,21 +90,25 @@
                       <div class="card-columns-wrapper">
                         <div class="card-column-left">
                           <div class="row">
-                          <div class="input-row-half">
-                          
-                            <input class="form-control input-registration" aria-describedby="First Name" placeholder="First Name">
+                            <input class="form-control input-registration input-half" aria-describedby="First Name" placeholder="First Name">
+                            <input class="form-control input-registration input-half" aria-describedby="Last Name" placeholder="Last Name">
                           </div>
-                          <div class="input-row-half">
-                            <input class="form-control input-registration" aria-describedby="Last Name" placeholder="Last Name">
+                          <input class="form-control input-registration" aria-describedby="Card Number" placeholder="Card Number">
+                          <div class="row">
+                            <input class="form-control input-registration input-half" aria-describedby="Expiration Date" placeholder="Expiration Date">
+                            <input class="form-control input-registration input-half" aria-describedby="CVV" placeholder="CVV">
                           </div>
-                        </div>
-                            <input class="form-control input-registration" aria-describedby="Card Number" placeholder="Card Number">
-                            <input class="form-control input-registration" aria-describedby="Expiration Date" placeholder="Expiration Date">
-                            <input class="form-control input-registration" aria-describedby="CVV" placeholder="CVV">
-                            <input class="form-control input-registration" aria-describedby="Address" placeholder="Address">
-                            <input class="form-control input-registration" aria-describedby="City" placeholder="City">
-                            <input class="form-control input-registration" aria-describedby="State" placeholder="State">
-                            <input class="form-control input-registration" aria-describedby="Zip" placeholder="Zip">
+                          <input class="form-control input-registration" aria-describedby="Address" placeholder="Address">
+                          <div class="row bottom-field-row">
+                            <input class="form-control input-registration input-half" aria-describedby="City" placeholder="City">
+                              <select class="form-control input-registration input-fourth show-menu-arrow" aria-describedby="State">
+                                <option selected disabled hidden>State</option>
+                                <option>AL</option>
+                                <option>AK</option>
+                                <option>AZ</option>
+                              </select>
+                            <input class="form-control input-registration input-fourth" aria-describedby="Zip" placeholder="Zip">
+                          </div>
                         </div>
                         <div class="card-column-right-bottom">
                           <button type="submit" class="btn btn-red btn-registration">Submit</button>
