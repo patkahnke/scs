@@ -229,8 +229,6 @@ input::placeholder {
 /*-----------------------------------------------------------*/
 
 .card-row {
-	display: flex;
-	flex-direction: row;
 	margin-bottom: 20px;
 }
 
@@ -244,8 +242,6 @@ input::placeholder {
 
 .card-row>div {
 	width: 50%;
-	display: flex;
-	justify-content: flex-start;
 }
 
 .card-main-page {
