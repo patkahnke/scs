@@ -522,6 +522,12 @@ select:hover { cursor: pointer; }
 	height: 45px;
 }
 
+.tab-content { height: 285px; }
+
+/*-----------------------------------------------------------*/
+/*-------------------------- Carets -------------------------*/
+/*-----------------------------------------------------------*/
+
 .nav-link .dropdown-toggle { display: none; }
 
 .nav-link.active .dropdown-toggle {
@@ -529,7 +535,26 @@ select:hover { cursor: pointer; }
 	margin-left: 6px;
 }
 
-.tab-content { height: 285px; }
+.hover-white-show-caret:hover {
+	padding-bottom: 3px;
+	border-width: 1px 1px 4px 1px;
+	border-style: solid;
+	border-color: #9C1B26;
+	color: #9C1B26;
+	background-color: #F1F1F2;
+}
+
+.hover-white-show-caret .dropdown-toggle,
+.btn-login.dropdown-toggle:hover .dropdown-toggle {
+	display: none;
+}
+
+.hover-white-show-caret:hover .dropdown-toggle {
+	display: inline-flex;
+	margin-left: 6px;
+	height: 0;
+	transform: rotate(-90deg);
+}
 
 /*-----------------------------------------------------------*/
 /*-------------------------- Footer -------------------------*/
