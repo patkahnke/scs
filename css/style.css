@@ -262,6 +262,7 @@ select:hover {
 
 .card-payment {
 	width: 620px;
+	border: none;
 }
 
 .card-course-description {
@@ -609,7 +610,6 @@ img {
 
 .card {
 	margin-top: 30px;
-	border: none;
 }
 
 .row {
