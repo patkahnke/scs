@@ -7,7 +7,7 @@ body {
 	max-width: 1024px;
 	margin: 0 auto;
 	display: flex;
-  	flex-flow: column wrap;
+  flex-flow: column wrap;
 }
 
 h1, h2 {
@@ -29,14 +29,100 @@ h4 {
 }
 
 /*-----------------------------------------------------------*/
+/*-------------------------- FLEX ---------------------------*/
+/*-----------------------------------------------------------*/
+
+.flex-col-spacearound {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.flex-col-spacearound-center {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+}
+
+.flex-col-spacebetween {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.flex-col-end-center {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.flex-col-start-center {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.flex-row-end {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.flex-row-start {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.flex-row-spacearound {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.flex-row-spacearound-center {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.flex-row-spacearound-start {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+.flex-row-spacebetween {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.flex-row-spacebetween-center {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.flex-row-spacebetween-end {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+/*-----------------------------------------------------------*/
 /*------------------------- Header --------------------------*/
 /*-----------------------------------------------------------*/
 
 .header-container {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 	background-repeat: no-repeat;
 	color: #9C1B26;
 }
@@ -44,30 +130,10 @@ h4 {
 .header-top-row {
 	padding-top: 36px;
 	padding-bottom: 8px;
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-}
-
-.header-bottom-row {
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
 }
 
 .header-bottom-left {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
 	padding-bottom: 36px;
-}
-
-.header-bottom-right {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: flex-end;
 }
 
 .logo-text {
@@ -94,10 +160,6 @@ h4 {
   height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-	flex-direction: column;
-  	justify-content: flex-start;
-  	align-items: center;
 }
 
 .odor-school {
@@ -111,10 +173,6 @@ h4 {
 .card-container {
 	background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-	flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
 }
 
 .course-detail {
@@ -129,20 +187,11 @@ h4 {
 	width: 100%;
 }
 
-.login-form-show {
-	width: 100%;
-	display: flex;
-	justify-content: flex-end;
-}
-
 .login-wrapper {
 	width: 620px;
 	height: 120px;
 	color: #9C1B26;
 	background-color: #F1F1F2;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
 }
 
 .input-login {
@@ -225,8 +274,6 @@ select:hover {
 /*-----------------------------------------------------------*/
 
 .card-row {
-	display: flex;
-	flex-direction: row;
 	margin-bottom: 20px;
 	justify-content: space-between;
 }
@@ -241,23 +288,21 @@ select:hover {
 
 .card-row>div {
 	width: 50%;
-	display: flex;
-	justify-content: flex-start;
 }
 
 .card-main-page {
-  	width: 620px;
+  width: 620px;
 	height: 440px;
-  	border-radius: 0px;
-  	border: none;
+	border-radius: 0px;
+	border: none;
 	margin-top: 30px;
 }
 
 .card-course-detail {
-  	width: 620px;
+  width: 620px;
 	height: 700px;
-  	border-radius: 0px;
-  	border: none;
+	border-radius: 0px;
+	border: none;
 }
 
 .card-payment {
@@ -266,10 +311,10 @@ select:hover {
 }
 
 .card-course-description {
-  	width: 360px;
+  width: 360px;
 	height: 200px;
-  	border-radius: 0px;
-  	border: none;
+	border-radius: 0px;
+	border: none;
 	margin-top: 30px;
 	border: 1px solid #9C1B26;
 }
@@ -279,9 +324,6 @@ select:hover {
 	width: 190px;
 	border: 1px solid #9C1B26;
 	border-top: 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 }
 
 .course-detail-text {
@@ -291,22 +333,19 @@ select:hover {
 }
 
 .card-course-contents {
-	justify-content: flex-start;
-  	width: 360px;
+  width: 360px;
 	height: 275px;
-  	border-radius: 0px;
-  	border: none;
+  border-radius: 0px;
+  border: none;
 	margin-top: 30px;
 	border: 1px solid #9C1B26;
 }
 
 .card-header {
-  	height: 45px;
-  	width: 100%;
-  	display: flex;
-  	background-color: #9C1B26;
-  	border-radius: 0px;
-  	color: #f9f9f9;
+	height: 45px;
+	background-color: #9C1B26;
+	border-radius: 0px;
+	color: #f9f9f9;
 	font-size: 14px;
 }
 
@@ -330,66 +369,19 @@ select:hover {
 }
 
 .card-header:first-child {
-  	border-radius: 0px;
-}
-
-.card-body-main-page {
-  	display: flex;
-  	justify-content: space-around;
+  border-radius: 0px;
 }
 
 .card-body-course-detail {
-  	display: flex;
-	flex-direction: column;
-  	justify-content: space-around;
 	font-size: 12px;
 }
 
 .card-body-course-contents {
-	width: 100%;
-  	display: flex;
-	align-items: flex-start;
 	padding-left: 0;
 }
 
-.card-column {
-  	display: flex;
-  	flex-direction: column;
-  	align-items: center;
-}
-
 .card-column-right {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
 	padding-top: 30px;
-}
-
-.card-column-right-bottom {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	align-items: center;
-}
-
-.card-columns-wrapper {
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-}
-
-.card-subtitle {
-	display: flex;
-	justify-content: space-around;
-	align-items: flex-start;
-}
-
-.card-subtitle-course-detail {
-	width: 100%;
-	display: flex;
-	justify-content: flex-start;
 }
 
 .card-subtitle h3 {
@@ -401,22 +393,29 @@ select:hover {
 	color: #9C1B26;
 }
 
-.button-group {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-}
-
 .expandable-text-wrapper {
 	width: 256px;
 	height: 80px;
-	display: flex;
-	align-items: center;
 	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
 	color: #f9f9f9;
-	background-image: url("../imgs/button_hover_01.png");
 	background-size: 256px;
 	padding: 10px;
+}
+
+.exp-txt-wrp-1 {
+	background-image: url("../imgs/button_hover_01.png");
+}
+
+.exp-txt-wrp-2 {
+	background-image: url("../imgs/button_hover_02.png");
+}
+
+.exp-txt-wrp-3 {
+	background-image: url("../imgs/button_hover_03.png");
+}
+
+.exp-txt-wrp-4 {
+	background-image: url("../imgs/button_hover_04.png");
 }
 
 .collapsed-button {
@@ -460,7 +459,6 @@ select:hover {
 	width: 190px;
 	height: 45px;
 	padding: 0;
-	display: flex;
 	margin-top: 15px;
 }
 
@@ -498,9 +496,9 @@ select:hover {
 }
 
 .btn-card {
-  	width: 256px;
-  	height: 45px;
-  	margin-top: 10px;
+	width: 256px;
+	height: 45px;
+	margin-top: 10px;
 	text-align: left;
 	font-size: 14px;
 }
@@ -513,7 +511,7 @@ select:hover {
 }
 
 .btn-white {
-  	border-radius: 0px;
+  border-radius: 0px;
 	border: 1px solid #9C1B26;
 	color: #9C1B26;
 	height: 45px;
@@ -567,17 +565,8 @@ select:hover {
 /*-----------------------------------------------------------*/
 
 footer {
-  	height: 180px;
+  height: 180px;
 	background-color: #F1F1F2;
-}
-
-.footer-container {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-around;
 }
 
 .logo-text-footer {
