@@ -544,7 +544,10 @@ select:hover { cursor: pointer; }
 	background-color: #F1F1F2;
 }
 
-.hover-white-show-caret .dropdown-toggle { display: none; }
+.hover-white-show-caret .dropdown-toggle,
+.btn-login.dropdown-toggle:hover .dropdown-toggle {
+	display: none;
+}
 
 .hover-white-show-caret:hover .dropdown-toggle {
 	display: inline-flex;
