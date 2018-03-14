@@ -41,9 +41,9 @@
           </div>
         </div>
       </header>
-      <div class="container flex-col-start-center card-container tall odor-school" role="main">
+      <div class="container flex-col-start-center card-container card-tall odor-school" role="main">
         <div class="card card-payment">
-          <div class="card-header flex-row-spacearound-center">
+          <div class="card-header card-header-large">
               Welcome to St. Croix Sensory, Inc. Training
           </div>
           <div class="card-body flex-col-spacearound card-body-course-detail">
@@ -51,7 +51,7 @@
               <h3>Nasal Ranger Inspector</h3>
             </div>
 
-              <div class="card-row">
+              <div class="card-row flex-row-spacebetween">
                 <div class="card card-nested left-card">
                   <div class="card-header card-header-small">
                     Course Registration
@@ -70,91 +70,87 @@
                 </div>
               </div>
               <h4>Payment options:</h4>
-                <ul class="nav nav-tabs" id="payment-options" role="tablist">
-                  <li class="nav-item">
-                    <a class="nav-link active btn-red" id="visa-mc-tab" data-toggle="tab" href="#visa-mc" role="tab" aria-controls="visa-mc" aria-selected="true">Visa / MC<span class="dropdown-toggle"></span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link btn-red" id="paypal-tab" data-toggle="tab" href="#paypal" role="tab" aria-controls="paypal" aria-selected="false">PayPal<span class="dropdown-toggle"></span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link btn-red" id="access-code-tab" data-toggle="tab" href="#access-code" role="tab" aria-controls="access-code" aria-selected="false">Access Code<span class="dropdown-toggle"></span></a>
-                  </li>
-                </ul>
+              <ul class="nav nav-tabs" id="payment-options" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active btn-red" id="visa-mc-tab" data-toggle="tab" href="#visa-mc" role="tab" aria-controls="visa-mc" aria-selected="true">Visa / MC<span class="dropdown-toggle"></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn-red" id="paypal-tab" data-toggle="tab" href="#paypal" role="tab" aria-controls="paypal" aria-selected="false">PayPal<span class="dropdown-toggle"></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn-red" id="access-code-tab" data-toggle="tab" href="#access-code" role="tab" aria-controls="access-code" aria-selected="false">Access Code<span class="dropdown-toggle"></span></a>
+                </li>
+              </ul>
 
-                <!-- Tab panes -->
-                <div class="tab-content">
+              <!-- Tab panes -->
+              <div class="tab-content">
 
-                  <div class="tab-pane active" id="visa-mc" role="tabpanel" aria-labelledby="visa-mc-tab">
-                    <form>
-                      <div class="card-columns-wrapper">
-                        <div class="card-column-left">
-                          <div class="row">
-                            <input class="form-control input-registration input-half" aria-describedby="First Name" placeholder="First Name">
-                            <input class="form-control input-registration input-half" aria-describedby="Last Name" placeholder="Last Name">
-                          </div>
-                          <input class="form-control input-registration" aria-describedby="Card Number" placeholder="Card Number">
-                          <div class="row">
-                            <input class="form-control input-registration input-half" aria-describedby="Expiration Date" placeholder="Expiration Date">
-                            <input class="form-control input-registration input-half" aria-describedby="CVV" placeholder="CVV">
-                          </div>
-                          <input class="form-control input-registration" aria-describedby="Address" placeholder="Address">
-                          <div class="row bottom-field-row">
-                            <input class="form-control input-registration input-half" aria-describedby="City" placeholder="City">
-                              <select class="form-control input-registration input-fourth show-menu-arrow" aria-describedby="State">
-                                <option selected disabled hidden>State</option>
-                                <option>AL</option>
-                                <option>AK</option>
-                                <option>AZ</option>
-                              </select>
-                            <input class="form-control input-registration input-fourth" aria-describedby="Zip" placeholder="Zip">
-                          </div>
+                <div class="tab-pane active" id="visa-mc" role="tabpanel" aria-labelledby="visa-mc-tab">
+                  <form>
+                    <div class="flex-row-spacearound">
+                      <div class="card-column-left">
+                        <div class="row">
+                          <input class="form-control input-registration input-half" aria-describedby="First Name" placeholder="First Name">
+                          <input class="form-control input-registration input-half" aria-describedby="Last Name" placeholder="Last Name">
                         </div>
-                        <div class="card-column-right-bottom">
-                          <button type="submit" class="btn btn-red btn-registration">Submit</button>
+                        <input class="form-control input-registration" aria-describedby="Card Number" placeholder="Card Number">
+                        <div class="row">
+                          <input class="form-control input-registration input-half" aria-describedby="Expiration Date" placeholder="Expiration Date">
+                          <input class="form-control input-registration input-half" aria-describedby="CVV" placeholder="CVV">
+                        </div>
+                        <input class="form-control input-registration" aria-describedby="Address" placeholder="Address">
+                        <div class="row bottom-field-row">
+                          <input class="form-control input-registration input-half" aria-describedby="City" placeholder="City">
+                            <select class="form-control input-registration input-fourth show-menu-arrow" aria-describedby="State">
+                              <option selected disabled hidden>State</option>
+                              <option>AL</option>
+                              <option>AK</option>
+                              <option>AZ</option>
+                            </select>
+                          <input class="form-control input-registration input-fourth" aria-describedby="Zip" placeholder="Zip">
                         </div>
                       </div>
-                    </form>
-                  </div>
-
-                  <div class="tab-pane" id="paypal" role="tabpanel" aria-labelledby="paypal-tab">
-                    <form>
-                      <div class="card-columns-wrapper">
-                        <div class="card-column-left">
-                          <div class="form-info-container">
-                            <img class="form-info" alt="PayPal Logo" src="imgs/Payment_PayPal.png">
-                            <p class="form-info">If you already have a PayPal account, please enter your PayPal credentials below.</p>
-                          </div>
-                          <input class="form-control input-registration" aria-describedby="Email Address" placeholder="Email Address">
-                          <input class="form-control input-registration bottom-field-row" aria-describedby="Password" placeholder="Password">
-                        </div>
-                        <div class="card-column-right-bottom">
-                          <button type="submit" class="btn btn-red btn-registration">Submit</button>
-                        </div>
+                      <div class="flex-col-end-center">
+                        <button type="submit" class="btn btn-red btn-registration">Submit</button>
                       </div>
-                    </form>
-                  </div>
-                  <div class="tab-pane" id="access-code" role="tabpanel" aria-labelledby="access-code-tab">
-                    <form>
-                      <div class="card-columns-wrapper">
-                        <div class="card-column-left">
-                          <div class="form-info-container">
-                            <img class="form-info" alt="Access Code" src="imgs/Payment_AccessCode.png">
-                            <p class="form-info">If your organization or employer has prepaid for this course and has provided an access code, please enter your access code below.</p>
-                          </div>
-                          <input class="form-control input-registration bottom-field-row" aria-describedby="Access Code" placeholder="Access Code">
-                        </div>
-                        <div class="card-column-right-bottom">
-                          <button type="submit" class="btn btn-red btn-registration">Submit</button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
+                    </div>
+                  </form>
                 </div>
 
-
-
-              
+                <div class="tab-pane" id="paypal" role="tabpanel" aria-labelledby="paypal-tab">
+                  <form>
+                    <div class="flex-row-spacearound">
+                      <div class="card-column-left">
+                        <div class="form-info-container">
+                          <img class="form-info" alt="PayPal Logo" src="imgs/Payment_PayPal.png">
+                          <p class="form-info">If you already have a PayPal account, please enter your PayPal credentials below.</p>
+                        </div>
+                        <input class="form-control input-registration" aria-describedby="Email Address" placeholder="Email Address">
+                        <input class="form-control input-registration bottom-field-row" aria-describedby="Password" placeholder="Password">
+                      </div>
+                      <div class="flex-col-end-center">
+                        <button type="submit" class="btn btn-red btn-registration">Submit</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="tab-pane" id="access-code" role="tabpanel" aria-labelledby="access-code-tab">
+                  <form>
+                    <div class="flex-row-spacearound">
+                      <div class="card-column-left">
+                        <div class="form-info-container">
+                          <img class="form-info" alt="Access Code" src="imgs/Payment_AccessCode.png">
+                          <p class="form-info">If your organization or employer has prepaid for this course and has provided an access code, please enter your access code below.</p>
+                        </div>
+                        <input class="form-control input-registration bottom-field-row" aria-describedby="Access Code" placeholder="Access Code">
+                      </div>
+                      <div class="flex-col-end-center">
+                        <button type="submit" class="btn btn-red btn-registration">Submit</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
             <div class="card-footer">
               <p>Questions about registration? <a href="#">Contact us</a></p>

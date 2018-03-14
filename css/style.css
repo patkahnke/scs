@@ -1,3 +1,58 @@
+/*-----------------------------------------------------------*/
+/*------------------- Bootstrap Overrides -------------------*/
+/*-----------------------------------------------------------*/
+
+.form-control {
+	border-radius: 0px;
+	color: #9C1B26;
+}
+
+img {
+  	width: 100%;
+  	height: auto;
+}
+
+.form-control:focus {
+	box-shadow: none;
+	color: #9C1B26;
+}
+
+.card { margin-top: 30px; }
+
+.row {
+	margin: 0;
+	justify-content: space-between;
+}
+
+.nav-tabs {
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+
+.nav-tabs, .nav-tabs .nav-link {
+	border: none;
+	border-radius: 0px;
+}
+
+.nav-link:hover { color: #F1F1F2; }
+
+.card-footer {
+	display: inline-flex;
+	justify-content: center;
+	border: none;
+}
+
+.card-footer p { margin: 0; }
+
+.card-footer a {
+	color: #9C1B26;
+	font-weight: bold;
+}
+
+/*-----------------------------------------------------------*/
+/*------------------------- General -------------------------*/
+/*-----------------------------------------------------------*/
+
 body {
 	font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
 	color: #000;
@@ -7,26 +62,19 @@ body {
 	max-width: 1024px;
 	margin: 0 auto;
 	display: flex;
-  flex-flow: column wrap;
+  	flex-flow: column wrap;
 }
 
-h1, h2 {
-	font-size: 30px;
+h1, h2, h3, h4 {
 	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
 	color: #9C1B26;
 }
 
-h3 {
-	font-size: 25px;
-	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
-	color: #9C1B26;
-}
+h1, h2 { font-size: 30px; }
 
-h4 {
-	font-size: 18px;
-	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
-	color: #9C1B26;
-}
+h3 { font-size: 25px; }
+
+h4 { font-size: 18px; }
 
 /*-----------------------------------------------------------*/
 /*-------------------------- FLEX ---------------------------*/
@@ -132,56 +180,38 @@ h4 {
 	padding-bottom: 8px;
 }
 
-.header-bottom-left {
-	padding-bottom: 36px;
-}
+.header-bottom-left { padding-bottom: 36px; }
 
-.logo-text {
-	width: 190px;
-}
+.logo-text { width: 190px; }
 
-.logo-icons {
-	width: 165px;
-}
+.logo-icons { width: 165px; }
 
-.icon-training {
-	width: 110px;
-}
+.icon-training { width: 110px; }
 
-.welcome {
-	padding: 0px 30px 12px 0px;
-}
+.welcome { padding: 0px 30px 12px 0px; }
 
 /*-----------------------------------------------------------*/
 /*---------------------- Main Content -----------------------*/
 /*-----------------------------------------------------------*/
 
 .main-content-main-page {
-  height: 600px;
-  background-repeat: no-repeat;
-  background-size: cover;
+	height: 600px;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-.odor-school {
-	background-image: url("../imgs/NasalRanger.jpg");
-}
+.odor-school { background-image: url("../imgs/NasalRanger.jpg"); }
 
-.sensory-institute {
-	background-image: url("../imgs/NasalRanger.jpg");
-}
+.sensory-institute { background-image: url("../imgs/NasalRanger.jpg"); }
 
 .card-container {
 	background-repeat: no-repeat;
-  background-size: cover;
+  	background-size: cover;
 }
 
-.course-detail {
-  height: 760px;
-}
+.course-detail { height: 760px; }
 
-.tall {
-  height: 800px;
-}
+.card-tall { height: 800px; }
 
 #login-form {
 	width: 100%;
@@ -231,18 +261,14 @@ textarea::placeholder, input::placeholder {
 }
 
 select.form-control {
-   color: #9C1B26;
-   height: 45px !important;
-   padding-left: 10px;
-}
-
-option {
 	color: #9C1B26;
+	height: 45px !important;
+	padding-left: 10px;
 }
 
-select:hover {
-	cursor: pointer;
-}
+option { color: #9C1B26; }
+
+select:hover { cursor: pointer; }
 
 .bottom-field-row, .bottom-field-row .input-registration {
 	margin-bottom: 0;
@@ -273,25 +299,16 @@ select:hover {
 /*--------------------- Main Card ---------------------------*/
 /*-----------------------------------------------------------*/
 
-.card-row {
-	margin-bottom: 20px;
-	justify-content: space-between;
-}
+.card-row { margin-bottom: 20px; }
 
-.left-card {
-	margin-right: 26px;
-}
+.left-card { margin-right: 26px; }
 
-.right-card {
-	margin-left: 26px;
-}
+.right-card { margin-left: 26px; }
 
-.card-row>div {
-	width: 50%;
-}
+.card-row>div { width: 50%; }
 
 .card-main-page {
-  width: 620px;
+  	width: 620px;
 	height: 440px;
 	border-radius: 0px;
 	border: none;
@@ -299,7 +316,7 @@ select:hover {
 }
 
 .card-course-detail {
-  width: 620px;
+  	width: 620px;
 	height: 700px;
 	border-radius: 0px;
 	border: none;
@@ -311,7 +328,7 @@ select:hover {
 }
 
 .card-course-description {
-  width: 360px;
+  	width: 360px;
 	height: 200px;
 	border-radius: 0px;
 	border: none;
@@ -333,10 +350,10 @@ select:hover {
 }
 
 .card-course-contents {
-  width: 360px;
+  	width: 360px;
 	height: 275px;
-  border-radius: 0px;
-  border: none;
+  	border-radius: 0px;
+  	border: none;
 	margin-top: 30px;
 	border: 1px solid #9C1B26;
 }
@@ -349,14 +366,6 @@ select:hover {
 	font-size: 14px;
 }
 
-.card-header-large {
-	justify-content: space-around;
-}
-
-.card-header-small {
-	justify-content: flex-start;
-}
-
 .card-nested {
 	display: flex;
 	border: 1px solid #9C1B26;
@@ -364,29 +373,17 @@ select:hover {
 	justify-content: center;
 }
 
-.card.card-nested {
-	margin-top: 14px;
-}
+.card.card-nested { margin-top: 14px; }
 
-.card-header:first-child {
-  border-radius: 0px;
-}
+.card-header:first-child { border-radius: 0px; }
 
-.card-body-course-detail {
-	font-size: 12px;
-}
+.card-body-course-detail { font-size: 12px; }
 
-.card-body-course-contents {
-	padding-left: 0;
-}
+.card-body-course-contents { padding-left: 0; }
 
-.card-column-right {
-	padding-top: 30px;
-}
+.card-column-right { padding-top: 30px; }
 
-.card-subtitle h3 {
-  	padding-bottom: 20px;
-}
+.card-subtitle h3 { padding-bottom: 20px; }
 
 .card-trademark {
 	font-size: 14px;
@@ -402,25 +399,15 @@ select:hover {
 	padding: 10px;
 }
 
-.exp-txt-wrp-1 {
-	background-image: url("../imgs/button_hover_01.png");
-}
+.exp-txt-wrp-1 { background-image: url("../imgs/button_hover_01.png"); }
 
-.exp-txt-wrp-2 {
-	background-image: url("../imgs/button_hover_02.png");
-}
+.exp-txt-wrp-2 { background-image: url("../imgs/button_hover_02.png"); }
 
-.exp-txt-wrp-3 {
-	background-image: url("../imgs/button_hover_03.png");
-}
+.exp-txt-wrp-3 { background-image: url("../imgs/button_hover_03.png"); }
 
-.exp-txt-wrp-4 {
-	background-image: url("../imgs/button_hover_04.png");
-}
+.exp-txt-wrp-4 { background-image: url("../imgs/button_hover_04.png"); }
 
-.collapsed-button {
-	display: none;
-}
+.collapsed-button { display: none; }
 
 .logo-nasal-ranger {
 	width: 110px;
@@ -432,17 +419,11 @@ select:hover {
 	font-weight: bold;
 }
 
-#cost::before {
-	content: "$";
-}
-
 /*-----------------------------------------------------------*/
 /*------------------------ Buttons --------------------------*/
 /*-----------------------------------------------------------*/
 
-.btn:hover {
-	cursor: pointer;
-}
+.btn:hover { cursor: pointer; }
 
 .btn-browse {
 	width: 190px;
@@ -462,13 +443,9 @@ select:hover {
 	margin-top: 15px;
 }
 
-.btn-course-top {
-	margin-top: 0;
-}
+.btn-course-top { margin-top: 0; }
 
-.btn-course-text {
-	padding: 10px 0 0 10px;
-}
+.btn-course-text { padding: 10px 0 0 10px; }
 
 .btn-icon-wrapper {
 	height: 44px;
@@ -511,7 +488,7 @@ select:hover {
 }
 
 .btn-white {
-  border-radius: 0px;
+  	border-radius: 0px;
 	border: 1px solid #9C1B26;
 	color: #9C1B26;
 	height: 45px;
@@ -528,9 +505,7 @@ select:hover {
 	margin: 10px;
 }
 
-.btn-registration {
-	width: 170px;
-}
+.btn-registration { width: 170px; }
 
 .nav-item {
 	width: 31%;
@@ -547,25 +522,21 @@ select:hover {
 	height: 45px;
 }
 
-.nav-link .dropdown-toggle {
-	display: none;
-}
+.nav-link .dropdown-toggle { display: none; }
 
 .nav-link.active .dropdown-toggle {
 	display: flex;
 	margin-left: 6px;
 }
 
-.tab-content {
-	height: 285px;
-}
+.tab-content { height: 285px; }
 
 /*-----------------------------------------------------------*/
 /*-------------------------- Footer -------------------------*/
 /*-----------------------------------------------------------*/
 
 footer {
-  height: 180px;
+  	height: 180px;
 	background-color: #F1F1F2;
 }
 
@@ -576,61 +547,4 @@ footer {
 .logo-icons-footer {
 	width: 200px;
 	padding-bottom: 8px;
-}
-
-/*-----------------------------------------------------------*/
-/*------------------- Bootstrap Overrides -------------------*/
-/*-----------------------------------------------------------*/
-
-.form-control {
-	border-radius: 0px;
-	color: #9C1B26;
-}
-
-img {
-  	width: 100%;
-  	height: auto;
-}
-
-.form-control:focus {
-	box-shadow: none;
-	color: #9C1B26;
-}
-
-.card {
-	margin-top: 30px;
-}
-
-.row {
-	margin: 0;
-	justify-content: space-between;
-}
-
-.nav-tabs {
-	justify-content: space-between;
-	margin-bottom: 15px;
-}
-
-.nav-tabs, .nav-tabs .nav-link {
-	border: none;
-	border-radius: 0px;
-}
-
-.nav-link:hover {
-	color: #F1F1F2;
-}
-
-.card-footer {
-	display: inline-flex;
-	justify-content: center;
-	border: none;
-}
-
-.card-footer>p {
-	margin: 0;
-	font-weight: bold;
-}
-
-.card-footer a {
-	color: #9C1B26;
 }
