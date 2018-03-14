@@ -324,6 +324,10 @@ select:hover {
 	justify-content: center;
 }
 
+.card.card-nested {
+	margin-top: 14px;
+}
+
 .card-header:first-child {
   	border-radius: 0px;
 }
@@ -530,7 +534,7 @@ select:hover {
 }
 
 .nav-item {
-	width: 33%;
+	width: 31%;
 	height: 45px;
 	display: flex;
 }
@@ -542,6 +546,15 @@ select:hover {
 	align-items: center;
 	font-size: 14px;
 	height: 45px;
+}
+
+.nav-link .dropdown-toggle {
+	display: none;
+}
+
+.nav-link.active .dropdown-toggle {
+	display: flex;
+	margin-left: 6px;
 }
 
 .tab-content {
@@ -596,6 +609,7 @@ img {
 
 .card {
 	margin-top: 30px;
+	border: none;
 }
 
 .row {
