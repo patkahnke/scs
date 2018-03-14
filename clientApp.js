@@ -1,10 +1,10 @@
 $(function() {
 
-  $(".btn-login").click(function(){
+  $(".btn-login").click(function() {
       $(".btn-login").toggleClass("dropdown-toggle");
   });
 
-  $(".btn-login-dropdown").click(function(){
+  $(".btn-login-dropdown").click(function() {
       $(".btn-login").toggleClass("dropdown-toggle");
   });
 
