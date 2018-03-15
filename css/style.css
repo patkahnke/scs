@@ -294,8 +294,8 @@ select:hover { cursor: pointer; }
 }
 
 .form-info-container>img {
-	width: 90px;
 	height: 90px;
+	width: auto;
 }
 
 /*-----------------------------------------------------------*/
