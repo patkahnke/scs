@@ -209,7 +209,7 @@ h4 { font-size: 18px; }
 
 .card-container {
 	background-repeat: no-repeat;
-  	background-size: cover;
+  background-size: cover;
 }
 
 .course-detail { height: 760px; }
@@ -311,7 +311,7 @@ select:hover { cursor: pointer; }
 .card-row>div { width: 50%; }
 
 .card-main-page {
-  	width: 620px;
+  width: 620px;
 	height: 440px;
 	border-radius: 0px;
 	border: none;
@@ -319,7 +319,7 @@ select:hover { cursor: pointer; }
 }
 
 .card-course-detail {
-  	width: 620px;
+  width: 620px;
 	height: 700px;
 	border-radius: 0px;
 	border: none;
@@ -331,7 +331,7 @@ select:hover { cursor: pointer; }
 }
 
 .card-course-description {
-  	width: 360px;
+  width: 360px;
 	height: 200px;
 	border-radius: 0px;
 	border: none;
@@ -353,10 +353,10 @@ select:hover { cursor: pointer; }
 }
 
 .card-course-contents {
-  	width: 360px;
+  width: 360px;
 	height: 275px;
-  	border-radius: 0px;
-  	border: none;
+	border-radius: 0px;
+	border: none;
 	margin-top: 30px;
 	border: 1px solid #9C1B26;
 }
@@ -484,17 +484,18 @@ select:hover { cursor: pointer; }
 }
 
 .btn-red {
-  	border-radius: 0px;
-  	background-color: #9C1B26;
-  	color: #f9f9f9;
-  	height: 45px;
+	border-radius: 0px;
+	background-color: #9C1B26;
+	color: #f9f9f9;
+	height: 45px;
 }
 
 .btn-white {
-  	border-radius: 0px;
+  border-radius: 0px;
 	border: 1px solid #9C1B26;
 	color: #9C1B26;
 	height: 45px;
+	background-color: #F1F1F2;
 }
 
 .dropdown-toggle, .nav-tabs .nav-link.active {
@@ -564,7 +565,7 @@ select:hover { cursor: pointer; }
 /*-----------------------------------------------------------*/
 
 footer {
-  	height: 180px;
+  height: 180px;
 	background-color: #F1F1F2;
 }
 
