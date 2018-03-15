@@ -34,7 +34,7 @@ img {
 	border-radius: 0px;
 }
 
-.nav-link:hover { color: #F1F1F2; }
+.nav-link:hover { color: #FFF; }
 
 .card-footer {
 	display: inline-flex;
@@ -495,14 +495,22 @@ select:hover { cursor: pointer; }
 	border: 1px solid #9C1B26;
 	color: #9C1B26;
 	height: 45px;
-	background-color: #F1F1F2;
+	background-color: #FFF;
 }
 
 .dropdown-toggle, .nav-tabs .nav-link.active {
-	background-color: #F1F1F2;
 	color: #9C1B26;
 	font-weight: bold;
 }
+
+.dropdown-toggle {
+	background-color: #F1F1F2;
+}
+
+.nav-tabs .nav-link.active {
+	background-color: #FFF;
+}
+
 
 .btn-course-detail {
 	width: 170px;
@@ -545,7 +553,7 @@ select:hover { cursor: pointer; }
 	border-style: solid;
 	border-color: #9C1B26;
 	color: #9C1B26;
-	background-color: #F1F1F2;
+	background-color: #FFF;
 }
 
 .hover-white-show-caret .dropdown-toggle,
@@ -566,7 +574,7 @@ select:hover { cursor: pointer; }
 
 footer {
   height: 180px;
-	background-color: #F1F1F2;
+	background-color: #FFF;
 }
 
 .logo-text-footer {
